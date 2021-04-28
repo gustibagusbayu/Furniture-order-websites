@@ -1,0 +1,44 @@
+/* Global Variabel */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+:root{
+    /* size margin */
+    --top_navbar: 3rem;
+
+    /* color */
+    --primary: #F3EDE9;
+    --highlight: #AFA798;
+    --font_primary: #1B1C22;
+    --navbar_menu: #938071;
+    --promo: #FAFAFA;
+
+    /* fonts */
+    --fonts_family: 'Open Sans', sans-serif;
+    --fonts_default: 1rem;
+    --fonts_hero: 2.25rem;
+    --fonts_title: 2.125rem;
+    --fonts_subtitle: 26rem;
+    --fonts_component: 1.125rem;
+    --fonts_footer: 1.25rem;
+    --fonts_copyright: 0.875rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+nav{
+    margin-top: var(--top_navbar);
+}
+.navbar-nav > li{
+    margin-left: 3rem;
+}
+.nav-item{
+    font-size: var(--fonts_default);
+    font-weight: 600;
+}
+.nav-item a{
+    color: var(--navbar_menu) !important;
+}
