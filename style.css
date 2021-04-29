@@ -16,7 +16,7 @@
     --fonts_default: 1rem;
     --fonts_hero: 2.25rem;
     --fonts_title: 2.125rem;
-    --fonts_subtitle: 26rem;
+    --fonts_subtitle: 1.625rem;
     --fonts_component: 1.125rem;
     --fonts_footer: 1.25rem;
     --fonts_copyright: 0.875rem;
@@ -26,6 +26,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: var(--fonts_family);
+    scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -41,4 +43,252 @@ nav{
 }
 .nav-item a{
     color: var(--navbar_menu) !important;
+}
+.btnDownload{
+    border-color: var(--navbar_menu);
+    border-radius: 20px;
+    font-weight: 600;
+}
+.btnDownload:hover{
+    background-color: var(--navbar_menu);
+    color: var(--promo) !important;
+    border-color: var(--navbar_menu);
+}
+.backgroundHero{
+    height: 43rem;
+    width: 33rem;
+    z-index: -3;
+    background-color: var(--primary);
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* hero */
+.textHero{
+    margin-top: 10rem;
+}
+.imageHero{
+    margin-top: 6rem;
+}
+.textHero h1{
+    font-size: var(--fonts_hero);
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--font_primary);
+}
+.textHero span{
+    color: var(--highlight);
+}
+.textHero p{
+    color: var(--font_primary);
+    font-size: var(--fonts_default);
+    line-height: 1.5rem;
+}
+.btnGetStarted{
+    border-radius: 5px;
+    color: var(--highlight);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btnGetStarted:hover{
+    background-color: var(--highlight);
+    color: var(--promo);
+    border-color: var(--highlight);
+}
+
+/* services */
+#services{
+    margin-top: 10rem;
+}
+.lamp{
+    margin-top: -29.7rem;
+    left: 19.6rem;
+    width: 14rem;
+    height: 29rem;
+    position: absolute;
+}
+.sofa1{
+    width: 15.3rem;
+    height: 15.3rem;
+}
+.sofa2{
+    margin-top: -0.2rem;
+    width: 15.3rem;
+    height: 15.3rem;
+}
+.textServices{
+    padding-left: 4rem;
+    margin-top: 5rem;
+}
+.textServices h1{
+    color: var(--font_primary);
+    font-size: var(--fonts_title);
+    line-height: 3rem;
+    font-weight: 700;
+}
+.textServices p{
+    font-size: var(--fonts_default);
+    color: var(--font_primary);
+    line-height: 1.5rem;
+}
+.textServices span{
+    color: var(--highlight);
+}
+.textServices ul{
+    margin-left: -1rem;
+    list-style: none;
+}
+.textServices ul li::before{
+    content: "\2022";
+    color: var(--highlight);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1rem;
+}
+
+/* blog */
+#blog{
+    margin-top: 10rem;
+}
+#blog h1{
+    text-align: center;
+    color: var(--font_primary);
+    font-size: var(--fonts_title);
+    line-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+#blog span{
+    color: var(--highlight);
+}
+.left img{
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.right img{
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.left .timestamp{
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--font_primary);
+}
+.right .timestamp{
+    margin-bottom: 0.5rem;
+    color: var(--font_primary);
+}
+.left  h2 {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--font_primary);
+    font-size: var(--fonts_subtitle);
+    font-weight: 700;
+}
+.right  h2 {
+    margin-bottom: 1rem;
+    color: var(--font_primary);
+    font-size: var(--fonts_subtitle);
+    font-weight: 700;
+}
+.left  .description {
+    margin-left: 2rem;
+    color: var(--font_primary);
+}
+.right  .description {
+    color: var(--font_primary);
+}
+.left a {
+    margin-left: 2rem;
+}
+.left a, .right a{
+    border-radius: 5px;
+    color: var(--highlight);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.left a:hover{
+    background-color: var(--highlight);
+    color: var(--promo);
+    border-color: var(--highlight);
+}
+.right a:hover{
+    background-color: var(--highlight);
+    color: var(--promo);
+    border-color: var(--highlight);
+}
+
+/* download */
+#download{
+    margin-top: 12rem;
+    background: var(--primary);
+    height: 37.25rem;
+}
+.component img{
+    right: 0;
+    width: 34rem;
+    height: 37.25rem;
+    position: absolute;
+}
+.textDownload{
+    margin-top: 10rem;
+}
+.textDownload h1{
+    color: var(--font_primary);
+    font-size: var(--fonts_title);
+    line-height: 2.894rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.textDownload span{
+    color: var(--highlight);
+}
+.textDownload p{
+    font-size: var(--fonts_component);
+    color: var(--font_primary);
+}
+.textDownload a{
+    margin-left: -0.5rem;
+}
+.imageDownload{
+    z-index: 2;
+    margin-top: 6.5rem;
+    padding: 0;
+}
+.mockup{
+    display: inline-block;
+}
+.imageDownload h1{
+    display: inline-block;
+    color: var(--promo);
+    font-size: var(--fonts_title);
+    line-height: 3rem;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+/* footer */
+#footer{
+    margin-top: 10rem;
+}
+.credit img{
+    margin-bottom: 1rem;
+}
+#footer h6{
+    color: var(--font_primary);
+    font-weight: 600;
+    font-size: var(--fonts_footer);
+    margin-bottom: 1rem;
+}
+#footer a{
+    text-decoration: none;
+    color: var(--font_primary);
+    margin-bottom: -2rem;
+}
+.contact a{
+    margin-right: 0.7rem;
 }

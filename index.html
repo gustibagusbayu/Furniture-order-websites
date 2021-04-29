@@ -8,6 +8,8 @@
     <title>Interior | Furniture Order App</title>
   </head>
   <body>
+      
+    <div class="backgroundHero"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
@@ -18,34 +20,159 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#blog">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Download</a>
+                    <a class="nav-link btn btn-outline-dark btnDownload px-3" href="#download">Download</a>
                   </li>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Fill your <span>space</span> at home <br>
-                        with <span>stylish furniture</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non.</p>
-                    <a href="" class="btn btn-primary">Get Started</a>
-                </div>
-                <div class="col-md-7">
-                    <img src="./assets/images/hero image.svg" alt="hero image">
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 textHero">
+                        <h1>Fill your <span>space</span> at home <br>
+                            with <span>stylish furniture</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                            elit ut aliquam, purus sit amet luctus venenatis, <br>
+                            lectus magna fringilla urna, porttitor rhoncus dolor <br>
+                            purus non.</p>
+                        <a href="" class="btn btn-primary btnGetStarted">Get Started</a>
+                    </div>
+                    <div class="col-md-7 imageHero">
+                        <img class="img-fluid" src="./assets/images/hero image.svg" alt="hero image">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 imageServices">
+                        <div class="col-md-6 sofas">
+                            <div class="row">
+                                <img class="sofa1 img-fluid" src="./assets/images/sofa1.svg" alt="sofa1">
+                            </div>
+                            <div class="row">
+                                <img class="sofa2 img-fluid" src="./assets/images/sofa2.svg" alt="sofa2">
+                            </div>
+                            <img class="lamp img-fluid" src="./assets/images/lamp.svg" alt="lamp">
+                        </div>
+                    </div>
+                    <div class="col-md-7 textServices">
+                        <h1>How to we provides our <span>services</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit <br>
+                            amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus <br>
+                            non enim praesent elementum facilisis :</p>
+                        <ul>
+                            <li>Elegant</li>
+                            <li>Minimalist</li>
+                            <li>Stylish</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <h1>Our popular <span>blog</span></h1>
+                    <div class="col-md-6 left">
+                        <img src="./assets/images/blog left.svg" class="img-fluid" alt="blog left">
+                        <p class="timestamp">11 January 2021</p>
+                        <h2>Make Cozy Space in Your Home</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
+                            ut aliquam, purus sit amet luctus venenatis, lectus magna <br> 
+                            fringilla urna, porttitor rhoncus dolor.</p>
+                        <a href="" class="btn btn-primary">See More ></a>
+                    </div>
+                    <div class="col-md-6 right">
+                        <img src="./assets/images/blog right.svg" class="img-fluid" alt="blog right">
+                        <p class="timestamp">21 February 2021</p>
+                        <h2>Story with Minimalist Furnitures</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
+                            ut aliquam, purus sit amet luctus venenatis, lectus magna <br> 
+                            fringilla urna, porttitor.</p>
+                        <a href="" class="btn btn-primary">See More ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Section -->
+
+        <!-- Download Section -->
+        <section id="download">
+            <div class="component"><img src="./assets/images/component.svg" alt="component"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 textDownload">
+                        <h1><span>Download</span> furniture order app <br>
+                            and get the bonus</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit <br>
+                            amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor.</p>
+                        <a href=""><img src="./assets/icons/android.svg" alt="android"></a>
+                        <a href=""><img src="./assets/icons/apple.svg" alt="apple"></a>
+                    </div>
+                    <div class="col-md-5 imageDownload">
+                        <img class="mockup" src="./assets/images/mockup.svg" alt="mockup">
+                        <h1>GET 40% OFF <br>
+                            FOR EVERY <br>
+                            PURCHASE!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Download Section -->
+
+        <!-- Footer Section -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 credit">
+                        <a href=""><img src="./assets/logo/Interior.svg" alt="logo"></a>
+                        <p>50 New Town Street,<br>
+                            V2 5NW, Plastian, USA.</p>
+                        <p>Costumer Service : support@interior.com</p>
+                    </div>
+                    <div class="col-md-3 support">
+                        <h6>Support</h6>
+                        <a href=""><p>Privacy & Policy</p></a>
+                        <a href=""><p>Term & Conditions</p></a>
+                        <a href=""><p>Support System</p></a>
+                    </div>
+                    <div class="col-md-3 about">
+                        <h6>Support System</h6>
+                        <a href=""><p>About us</p></a>
+                        <a href=""><p>Design Services</p></a>
+                    </div>
+                    <div class="col-md-2 contact">
+                        <h6>Contact Us</h6>
+                        <div class="socialMedia">
+                            <a href=""><img src="./assets/icons/instagram.svg" alt="instagram"></a>
+                            <a href=""><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+                            <a href=""><img src="./assets/icons/twitter.svg" alt="twitter"></a>
+                            <a href=""><img src="./assets/icons/email.svg" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Footer Section -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
