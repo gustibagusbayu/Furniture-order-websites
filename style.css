@@ -376,6 +376,7 @@ nav{
     }
     .sofa1, .sofa2{
         max-width: 40%;
+        margin-left: 3rem;
     }
     .sofa2{
         margin-top: -7rem;
@@ -387,7 +388,7 @@ nav{
     }
     .imageServices{
         margin-top: -1rem;
-        margin-left: 3rem;
+        float: right;
     }
     .textServices{
         padding-left: 1rem;
@@ -477,7 +478,7 @@ nav{
 
     /* footer */
     #footer{
-        height: 100vh;
+        height: 70vh;
         margin-top: 6rem;
         text-align: center;
     }
