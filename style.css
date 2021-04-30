@@ -34,6 +34,9 @@
 nav{
     margin-top: var(--top_navbar);
 }
+.navbar-nav{
+    margin-left: auto;
+}
 .navbar-nav > li{
     margin-left: 3rem;
 }
@@ -43,6 +46,28 @@ nav{
 }
 .nav-item a{
     color: var(--navbar_menu) !important;
+}
+.navbar .nav-item .nav-link {
+    padding: 5px 0;
+    position: relative;
+}
+.navbar .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--navbar_menu);
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before{
+    color: var(--navbar_menu);
+    transform: scale(1);
 }
 .btnDownload{
     border-color: var(--navbar_menu);
@@ -291,4 +316,176 @@ nav{
 }
 .contact a{
     margin-right: 0.7rem;
+}
+.support {
+    margin-top: -0.2rem;
+}
+.about {
+    margin-top: -0.2rem;
+}
+.contact {
+    margin-top: -0.2rem;
+}
+.copyright{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* mobile version */
+@media (max-width: 575.98px) {
+    /* navbar */
+    .navbar-nav{
+        text-align: center;
+        margin-left: -3rem;
+    }
+    .navbar-light .navbar-toggler-icon{
+        background-image: url(./assets/icons/menu.svg) !important;
+        outline: none;
+    }
+    .navbar-light button{
+        border: 0;
+    }
+    .nav-item{
+        margin-left: 0;
+    }
+
+    /* home */
+    .backgroundHero{
+        width: 40%;
+        height: 60%;
+    }
+    .imageHero{
+        margin-bottom: -6rem;
+    }
+    .textHero h1{
+        font-size: calc(var(--fonts_hero) - 0.5rem);
+        line-height: 2rem;
+    }
+    .textHero p{
+        margin-top: 1rem;
+        font-size: calc(var(--fonts_default) - 0.1rem);
+        line-height: 1.3rem;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    /* services */
+    #services{
+        margin-top: 6rem;
+    }
+    .sofa1, .sofa2{
+        max-width: 40%;
+    }
+    .sofa2{
+        margin-top: -7rem;
+    }
+    .lamp{
+        max-width: 32.8%;
+        padding-top: 6.8rem;
+        margin-left: -7.5rem;
+    }
+    .imageServices{
+        margin-top: -1rem;
+        margin-left: 3rem;
+    }
+    .textServices{
+        padding-left: 1rem;
+        margin-top: 0;
+    }
+    .textServices h1{
+        font-size: calc(var(--fonts_hero) - 0.5rem);
+        line-height: 2rem;
+    }
+    .textServices p{
+        margin-top: 1rem;
+        font-size: calc(var(--fonts_default) - 0.1rem);
+        line-height: 1.3rem;
+    }
+    .textServices li{
+        margin-top: 0.5rem;
+        font-size: calc(var(--fonts_default) - 0.1rem);
+        line-height: 1.3rem;
+    }
+    .textServices ul{
+        margin-top: -0.5rem;
+    }
+
+    /* blog */
+    #blog{
+        margin-top: 6rem;
+    }
+    #blog h1{
+        font-size: calc(var(--fonts_hero) - 0.5rem);
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .left h2, .right h2{
+        font-size: calc(var(--fonts_hero) - 0.9rem);
+        line-height: 1.8rem;
+    }
+    .left p, .right p{
+        font-size: calc(var(--fonts_default) - 0.2rem);
+        line-height: 1.3rem;
+    }
+    .left .description  {
+        margin-left: 0;
+    }
+    .left .timestamp{
+        margin-left: 0;
+    }
+    .left h2{
+        margin-left: 0;
+    }
+    .left a{
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    /* download */
+    #download{
+        margin-top: 8rem;
+        height: 45rem;
+    }
+    .component img{
+        display: none;
+    }
+    .textDownload{
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .textDownload h1{
+        font-size: calc(var(--fonts_hero) - 0.4rem);
+        line-height: 2rem;
+    }
+    .textDownload p{
+        font-size: calc(var(--fonts_default) - 0.2rem);
+        line-height: 1.3rem;
+    }
+    .mockup{
+        max-width: 9rem;
+        padding-left: 1rem;
+        margin-top: -2rem;
+    }
+    .imageDownload h1{
+        font-size: calc(var(--fonts_hero) - 0.4rem);
+        line-height: 2rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        color: var(--navbar_menu);
+    }
+
+    /* footer */
+    #footer{
+        height: 100vh;
+        margin-top: 6rem;
+        text-align: center;
+    }
+    .credit p, .support p, .about p{
+        font-size: calc(var(--fonts_default) - 0.2rem);
+        line-height: 1.3rem;
+    }
+    .support, .about{
+        display: inline-block;
+    }
 }
