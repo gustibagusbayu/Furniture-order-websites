@@ -11,8 +11,6 @@ You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
 - [Author Info](#author-info)
 
 ---
@@ -29,7 +27,7 @@ This is my repository for slicing my design landing page furniture order website
 - Bootstrap
 - GSAP
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#read-me-for-furniture-order-websites)
 
 ---
 
@@ -44,4 +42,4 @@ Just download the file via zip file or fork my repository.
 - Instragram - [@gustibagusbayu](https://instagram.com/gustibagusbayu)
 - Website - [Padlabs.id](https://gustibagusbayu.github.io/)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#read-me-for-furniture-order-websites)
