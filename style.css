@@ -128,7 +128,7 @@ nav{
 }
 .lamp{
     margin-top: -29.7rem;
-    left: 19.6rem;
+    left: 23.5rem;
     width: 14rem;
     height: 29rem;
     position: absolute;
@@ -189,17 +189,15 @@ nav{
     color: var(--highlight);
 }
 .left img{
-    float: right;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 .right img{
-    float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
 .left .timestamp{
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 0.5rem;
     color: var(--font_primary);
 }
@@ -208,7 +206,7 @@ nav{
     color: var(--font_primary);
 }
 .left  h2 {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
     color: var(--font_primary);
     font-size: var(--fonts_subtitle);
@@ -221,14 +219,16 @@ nav{
     font-weight: 700;
 }
 .left  .description {
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: var(--font_primary);
+    max-width: 30rem;
 }
 .right  .description {
     color: var(--font_primary);
+    max-width: 35rem;
 }
 .left a {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .left a, .right a{
     border-radius: 5px;
@@ -293,7 +293,7 @@ nav{
     font-size: var(--fonts_title);
     line-height: 3rem;
     font-weight: 800;
-    margin-left: 2rem;
+    margin-left: 7rem;
 }
 
 /* footer */
@@ -329,6 +329,18 @@ nav{
 .copyright{
     margin-top: 3rem;
     text-align: center;
+}
+
+@media (max-width: 1280px){
+    .lamp{
+        left: 19.6rem;
+    }
+    .right  .description {
+        max-width: 32.5rem;
+    }
+    .imageDownload h1{
+        margin-left: 2rem;
+    }
 }
 
 /* mobile version */
